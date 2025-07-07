@@ -1,0 +1,111 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  
+}
+
+ html {
+    scroll-behavior: smooth;
+  }
+
+/* navbar styling started  */
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin: 10px 0px; */
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 30px;
+}
+.navbar ul {
+  text-align: center;
+}
+
+/* navbar styling ended  */
+
+
+/* hero section styling started  */
+.hero {
+  background-image: url(../img/hero-bg.jpg);
+  height: 300px;
+}
+
+.hero h2 {
+  color: white;
+  text-align: center;
+  padding-top: 102px;
+}
+
+
+/* hero section styling ended  */
+
+/* menu styling started  */
+
+.menu > h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.menu .dishes {
+  text-align: center;
+}
+
+
+.menu .dishes .dish {
+  
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+}
+
+.dish img {
+  border-radius: 20px;
+}
+.dish h3 {
+  color: #6C9433;
+}
+.dish button {
+  all: unset;
+  border: 1px solid #6C9433;
+  padding: 0px 5px;
+  background-color: aqua;
+  border-radius: 10px;
+  margin: 7px 0px;
+}
+
+/* menu styling ended  */
+
+
+/* contact section styling started  */
+.contact {
+  text-align: center;
+  margin: 30px 0px;
+}
+.contact > div {
+  width: 45%;
+  display: inline-block;
+  
+}
+
+.contact input, .contact textarea {
+  display: block;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  width: 80%;
+}
+
+.contact button {
+    all: unset;
+    padding: 4px 4px;
+    border: 2px solid black;
+    margin-left: 155px;
+    border-radius: 8px;
+    background-color: #28ec65;
+
+}
+.contact .contact-form {
+  padding-left: 19px;
+}
