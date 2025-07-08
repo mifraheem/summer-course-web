@@ -30,6 +30,9 @@
 /* hero section styling started  */
 .hero {
   background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 300px;
 }
 
