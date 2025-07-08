@@ -59,10 +59,14 @@
   width: 25%;
   text-align: center;
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 .dish img {
-  border-radius: 20px;
+    border-radius: 20px;
+    width: 235px;
+    height: 185px;
+
 }
 .dish h3 {
   color: #6C9433;

@@ -1,0 +1,8 @@
+
+li {
+  list-style-type: none;
+}
+
+li i { 
+  margin-right: 5px;
+}
