@@ -2,12 +2,12 @@
   padding: 0px;
   margin: 0px;
   text-decoration: none;
-  
+
 }
 
- html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
 /* navbar styling started  */
 .navbar {
@@ -20,6 +20,7 @@
   display: inline;
   margin-right: 30px;
 }
+
 .navbar ul {
   text-align: center;
 }
@@ -47,33 +48,36 @@
 
 /* menu styling started  */
 
-.menu > h2 {
+.menu>h2 {
   text-align: center;
   margin: 20px 0px;
 }
 
 .menu .dishes {
-  text-align: center;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 
 .menu .dishes .dish {
-  
-  width: 25%;
-  text-align: center;
-  display: inline-block;
+
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .dish img {
-    border-radius: 20px;
-    width: 235px;
-    height: 185px;
+  border-radius: 20px;
+  width: 235px;
+  height: 185px;
 
 }
+
 .dish h3 {
   color: #6C9433;
 }
+
 .dish button {
   all: unset;
   border: 1px solid #6C9433;
@@ -91,13 +95,15 @@
   text-align: center;
   margin: 30px 0px;
 }
-.contact > div {
+
+.contact>div {
   width: 45%;
   display: inline-block;
-  
+
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   display: block;
   margin: 10px 0px;
   padding: 5px 10px;
@@ -105,14 +111,15 @@
 }
 
 .contact button {
-    all: unset;
-    padding: 4px 4px;
-    border: 2px solid black;
-    margin-left: 155px;
-    border-radius: 8px;
-    background-color: #28ec65;
+  all: unset;
+  padding: 4px 4px;
+  border: 2px solid black;
+  margin-left: 155px;
+  border-radius: 8px;
+  background-color: #28ec65;
 
 }
+
 .contact .contact-form {
   padding-left: 19px;
 }
