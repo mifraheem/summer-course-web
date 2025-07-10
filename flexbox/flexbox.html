@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox Tutorial</title>
+  <style>
+    .box {
+      border: 2px solid red;
+      width: 200px;
+      height: 100px;
+    }
+
+    .container {
+      height: 80vh;
+      border: 2px solid blue;
+
+      /* display: flex; */
+      /* flex-direction: row; */
+      /* align-items: center;   */
+      /* justify-content: center; */
+      justify-content: space-around;
+      /* justify-content: space-between; */
+      /* justify-content: space-evenly; */
+      ;
+      flex-wrap: wrap;
+
+
+    }
+    .box-1{
+      order: 103;
+      flex-grow: 2;
+    }
+    .box-2 {
+      order: 104;
+    }
+    .box-3{
+      order: 101;
+      align-self: flex-start;
+
+    }
+    .box-4{
+      order: 102;
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box box-4">4</div>
+  </div>
+
+</body>
+
+</html>

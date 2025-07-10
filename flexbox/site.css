@@ -1,0 +1,48 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  display: flex;
+  align-items: center;
+}
+.navbar .box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar .items {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .box li {
+  list-style-type: none;
+}
+
+.navbar .box i {
+  margin-left: 3px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container > div {
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.container > div.images img {
+
+  height: 100px;
+  width: 200px;
+}

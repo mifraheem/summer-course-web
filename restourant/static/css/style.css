@@ -92,15 +92,12 @@ html {
 
 /* contact section styling started  */
 .contact {
-  text-align: center;
+  display: flex;
   margin: 30px 0px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.contact>div {
-  width: 45%;
-  display: inline-block;
-
-}
 
 .contact input,
 .contact textarea {
@@ -114,7 +111,7 @@ html {
   all: unset;
   padding: 4px 4px;
   border: 2px solid black;
-  margin-left: 155px;
+  margin-left: 55px;
   border-radius: 8px;
   background-color: #28ec65;
 
