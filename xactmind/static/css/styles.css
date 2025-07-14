@@ -1,0 +1,119 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#header img.main-logo{
+  width: 180px;
+}
+
+#header .nav-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .navbar li{
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+#header .contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+#header .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .btn button{
+  all: unset;
+  background-color: rgb(70, 70, 226);
+  padding: 10px 10px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+#header .info i {
+  font-size: 10px;
+}
+
+/* hero section styling  */
+
+#hero {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+#hero .box {
+  border: 2px solid brown;
+}
+
+
+
+
+/* achievement styling started  */
+
+#achievement {
+  display: flex;
+  border: 2px solid rgb(53, 13, 13);
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+#achievement > div {
+  border: 1px solid black;
+}
+
+
+#story{
+  display: flex;
+  border: 2px solid blue;
+   margin-top: 20px;
+   justify-content: space-around;
+}
+
+
+#services{
+  border: 2px solid green;
+  margin-top: 20px;
+}
+#services .cards{
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+
+#images{
+  border: 2px solid orange;
+  margin-top: 20px;
+}
+#images .image{
+  border: 2px solid blue;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
