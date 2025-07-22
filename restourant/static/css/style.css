@@ -95,7 +95,7 @@ html {
   display: flex;
   margin: 30px 0px;
   justify-content: space-around;
-  flex-wrap: wrap;
+
 }
 
 
@@ -119,4 +119,10 @@ html {
 
 .contact .contact-form {
   padding-left: 19px;
+}
+
+@media screen and (max-width: 470px){
+  .contact{
+    flex-wrap: wrap;
+  }
 }

@@ -1,0 +1,63 @@
+body {
+  background-color: yellow;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  text-align: center;
+  background-color: rgb(104, 48, 48);
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    background-color: blue;
+  }
+
+  .lptp {
+    display: block;
+  }
+
+  .box {
+    background-color: blueviolet;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .tblt {
+    display: block;
+  }
+
+  .lptp {
+    display: none;
+  }
+
+  .box {
+    background-color: yellow;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 560px) {
+  .mbl {
+    display: block;
+  }
+
+  .tblt,
+  .lptp {
+    display: none;
+  }
+
+  .box {
+    background-color: whitesmoke;
+  }
+}
