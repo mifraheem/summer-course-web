@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block title %}
+  Add New Note
+{% endblock title %}
+
+  {% block content %}
+      
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">Create a New Note</h1>
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <form action="/create-note", method="post">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" id="title" class="form-control" placeholder="Enter note title" name="title">
+          </div>
+
+          <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea id="content" class="form-control" rows="5" placeholder="Enter note content" name="content"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success">Save Note</button>
+          <a href="/" class="btn btn-secondary">Back to Notes</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {% endblock content %}

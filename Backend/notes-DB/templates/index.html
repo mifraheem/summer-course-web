@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+All Notes
+{% endblock title %}
+
+{% block content %}
+
+
+<div class="container py-5">
+  <h1 class="mb-4 text-center">My Notes</h1>
+
+  <div class="row g-4">
+    {% for note  in allNotes %}
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{{ note.title }}</h5>
+          <p class="card-text">{{ note.content }}</p>
+        </div>
+        <div class="card-footer text-muted">
+          <a href="/delete/{{note.id}}" class="btn btn-danger">Delete Note</a>
+        </div>
+      </div>
+    </div>
+      
+    {% endfor %}
+
+  
+  </div>
+
+  <div class="text-center mt-5">
+    <a href="/create-note" class="btn btn-primary">Create New Note</a>
+  </div>
+</div>
+
+{% endblock content %}
