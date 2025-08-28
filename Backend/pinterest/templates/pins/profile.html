@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Profile - PinClone{% endblock %}
+
+{% block content %}
+<div class="container">
+  <!-- User Info -->
+  <div class="d-flex flex-column align-items-center text-center mb-5">
+    <img src="https://i.pravatar.cc/120?img=5" class="rounded-circle mb-3" alt="User Avatar">
+    <h4 class="mb-0">John Doe</h4>
+    <p class="text-muted mb-1">johndoe@example.com</p>
+    <p class="text-secondary">Creative designer | Love sharing inspirations 🌟</p>
+    <a href="#" class="btn btn-sm btn-outline-secondary"><i class="fa-solid fa-pen"></i> Edit Profile</a>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-pills mb-4 justify-content-center" id="profileTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="mypins-tab" data-bs-toggle="pill" data-bs-target="#mypins" type="button" role="tab">My Pins</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="savedpins-tab" data-bs-toggle="pill" data-bs-target="#savedpins" type="button" role="tab">Saved Pins</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="profileTabsContent">
+    <!-- My Pins -->
+    <div class="tab-pane fade show active" id="mypins" role="tabpanel">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        {% for i in range(1,5) %}
+          {% include 'pin.html' %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Saved Pins -->
+    <div class="tab-pane fade" id="savedpins" role="tabpanel">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        {% for i in range(5,9) %}
+          {% include 'pin.html' %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
