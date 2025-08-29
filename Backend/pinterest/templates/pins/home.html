@@ -5,10 +5,11 @@
 <h3 class="mb-4 text-center">Explore Pins</h3>
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-  {% for i in range(1,9) %}
 
-  {% include 'pin.html' %}
+{% for pin in pins %}
+{% include 'pin.html' %}
+{% endfor %}
   
-  {% endfor %}
+
 </div>
 {% endblock %}

@@ -16,16 +16,18 @@
       </tr>
     </thead>
     <tbody>
-      {% for i in range(1,8) %}
+      {% for user in users %}
+        
+      
       <tr>
-        <td>{{ i }}</td>
+        <td>{{ user.id }}</td>
         <td>
-          <img src="https://i.pravatar.cc/50?img={{ i }}" class="rounded-circle" alt="User Avatar">
+          <img src="{{ url_for('static', filename='uploads/' + user.profile_pic) if user.profile_pic else 'https://i.pravatar.cc/120?img=5' }}" class="rounded-circle" alt="User Avatar" width="100" height="100">
         </td>
-        <td>User {{ i }}</td>
-        <td>user{{ i }}@example.com</td>
+        <td>{{ user.name }}</td>
+        <td>{{user.email}}</td>
         <td class="text-center">
-          <a href="/user" class="btn btn-sm btn-outline-secondary">
+          <a href="/user/{{user.id}}" class="btn btn-sm btn-outline-secondary">
             <i class="fa-solid fa-user"></i> View
           </a>
         </td>
