@@ -1,0 +1,15 @@
+<div class="col">
+  <div class="card h-100 shadow-sm">
+    <img src="{{ url_for('static', filename=pin.image_url) }}" class="card-img-top" alt="Pin Image">
+    <div class="card-body">
+      <form action="/pin/{{pin.id}}/save" method="post">
+        <button type="submit" class="btn btn-sm btn-outline-primary">
+
+          Save
+
+        </button>
+      </form>
+      <a href="{{ url_for('pin.deletePin', pin_id=pin.id) }}" class="btn btn-danger">Delete</a>
+    </div>
+  </div>
+</div>
